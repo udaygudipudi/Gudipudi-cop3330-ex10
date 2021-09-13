@@ -1,0 +1,49 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 1 Solution
+ *  Copyright 2021 Uday Gudipudi
+ */
+
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner scan = new Scanner(System.in);
+
+    System.out.print("Enter the price of item 1: ");
+    int price1= scan.nextInt();
+
+    System.out.print("Enter the quantity of item 1: ");
+    int quantity1= scan.nextInt();
+
+    System.out.print("Enter the price of item 2: ");
+    int price2= scan.nextInt();
+
+    System.out.print("Enter the quantity of item 2: ");
+    int quantity2= scan.nextInt();
+
+    System.out.print("Enter the price of item 3: ");
+    int price3= scan.nextInt();
+
+    System.out.print("Enter the quantity of item 3: ");
+    int quantity3= scan.nextInt();
+
+    int total1 = price1 * quantity1;
+    int total2 = price2 * quantity2;
+    int total3 = price3 * quantity3;
+
+    double totaltotal = total1 + total2 + total3;
+
+    System.out.format("Subtotal: $%.2f ", totaltotal);
+    System.out.printf("%n");
+
+    double salestax = totaltotal * 0.055;
+
+    System.out.format("Tax: $%.2f ", salestax);
+    System.out.printf("%n");
+
+    double totaltotaltotal = totaltotal + salestax;
+
+    System.out.format("Total: $%.2f ", totaltotaltotal);
+
+  }
+}
